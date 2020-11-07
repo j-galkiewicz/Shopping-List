@@ -11,6 +11,7 @@ body {
   .shopping {
     display: grid;
     grid-template-columns: 1fr auto;
+    
   }
   
   .shopping-list {
@@ -19,6 +20,7 @@ body {
     border-radius: 1rem;
     width: 500px;
     margin: 4rem 0;
+    font-size: 1rem;
   }
   
   .shopping-list ul {
@@ -34,10 +36,12 @@ body {
     grid-gap: 1rem;
     align-items: center;
     border-bottom: 1px solid var(--gray);
+    font-size: 1rem;
   }
   
   .shopping-item input[type="checkbox"] {
     margin-right: 1rem;
+ 
   }
   
   .shopping-item input[type="checkbox"]:checked + .itemName {
@@ -45,7 +49,8 @@ body {
   }
   
   .shopping-item button {
-    padding: 0;
+    font-style: inherit;  
+    padding: 6px 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s;
@@ -54,13 +59,23 @@ body {
   .shopping-item button:hover {
     transform: scale(1.4);
   }
-
+  
   button {
-    width: auto;
-    height: auto;
-    transform: skewX(10%);
+    font-style: inherit;  
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 4px 2px;
+    border: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: .5rem;
   }
 
-  .btn {
-      font-size: medium;
-  }
+  button:hover {
+    opacity: 0.6;
+}
+
+input {
+    font-size: 1rem;
+    font-style: italic;
+}
