@@ -37,7 +37,8 @@ h2 {
   padding: 6px 10px;
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+  background-color: lightblue; }
   .shopping-item buttonshopping-item button:hover {
     transform: scale(1.4); }
 
@@ -69,7 +70,8 @@ input {
 /* Shopping Form */
 .shopping {
   display: grid;
-  grid-template-columns: 1fr auto; }
+  grid-template-columns: 1fr auto;
+  background-color: lightblue; }
   @media only screen and (max-width: 37.5em) {
     .shopping {
       grid-template-columns: auto; } }

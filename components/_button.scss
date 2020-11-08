@@ -6,6 +6,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s;
+    background-color: $color-background;
 
     &shopping-item button:hover {
         transform: scale(1.4);
