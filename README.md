@@ -8,4 +8,4 @@ I used vanilla JavaScript
 
 
 
-Not yet responsive :)
+
