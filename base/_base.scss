@@ -10,7 +10,11 @@ body {
     justify-items: center;
     background-color: $color-background;
     font-family: $main-font;
-    overflow-x:hidden;
+
+
+    @include respond(phone) {
+        display: flex;
+    }
   }
 
   ::selection {
@@ -21,9 +25,9 @@ body {
       margin: .5em;
       padding: 1.5em;
       @include respond(phone){
-        margin: .4em;
-        padding: .6em;
-        font-size: 1em;
+        margin: .2em;
+        padding: .4em;
+        font-size: 1.1em;
     }
   }
   

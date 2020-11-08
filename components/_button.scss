@@ -21,9 +21,8 @@
     font-weight: bold;
     border-radius: .5rem;
     @include respond(phone){
-        padding: 10px 10px;
-        margin: 4px 14px;
-       
+        padding: 5px 8px;
+        margin: 4px 40px; 
     }
 
     &button:hover {
@@ -34,7 +33,7 @@ input {
     font-size: 1rem;
     font-style: italic;
     @include respond(phone){
-        font-size: .7rem;
+        font-size: .8rem;
         margin-block-start: 1.4em;
         margin-block-end: 1.5em;
     }
