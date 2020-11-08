@@ -3,7 +3,6 @@
 .shopping {
     display: grid;
     grid-template-columns: 1fr auto;
-    background-color: $color-background;
   
     @include respond(phone){
         grid-template-columns: auto;

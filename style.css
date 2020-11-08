@@ -70,8 +70,7 @@ input {
 /* Shopping Form */
 .shopping {
   display: grid;
-  grid-template-columns: 1fr auto;
-  background-color: lightblue; }
+  grid-template-columns: 1fr auto; }
   @media only screen and (max-width: 37.5em) {
     .shopping {
       grid-template-columns: auto; } }
