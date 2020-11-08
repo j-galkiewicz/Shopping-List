@@ -60,8 +60,9 @@ input {
   font-style: italic; }
   @media only screen and (max-width: 37.5em) {
     input {
-      font-size: 1.2rem;
-      size: auto; } }
+      font-size: .7rem;
+      margin-block-start: 1.4em;
+      margin-block-end: 1.5em; } }
 
 /* Shopping Form */
 .shopping {
@@ -69,7 +70,7 @@ input {
   grid-template-columns: 1fr auto; }
   @media only screen and (max-width: 37.5em) {
     .shopping {
-      grid-template-columns: 38%; } }
+      grid-template-columns: 30%; } }
   .shopping-list {
     background: white;
     padding: 3rem;

@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     @include respond(phone){
-        grid-template-columns: 38%;
+        grid-template-columns: 30%;
     }
     &-list {
         background: $color-list;
