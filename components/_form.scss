@@ -1,0 +1,55 @@
+/* Shopping Form */
+
+.shopping {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    @include respond(phone){
+        grid-template-columns: 38%;
+    }
+    &-list {
+        background: $color-list;
+        padding: 3rem;
+        border-radius: 1rem;
+        width: 500px;
+        margin: 4rem 0;
+        font-size: 1rem;
+
+    &-list ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+    }
+}
+    
+    .shopping-item {
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1rem;
+        align-items: center;
+        border-bottom: 1px solid var(--gray);
+        font-size: 1rem;
+        @include respond(phone){
+            grid-template-columns: .1fr .4fr .1fr;
+            grid-gap: .5em;
+            padding: .2em 0;
+            font-size: .8em;
+        }
+    }
+
+        .shopping-item input[type="checkbox"] {
+            margin-right: 1rem;
+            @include respond(phone){
+                margin-right: .5rem;
+                justify-content: center;;
+            }
+        }
+
+        .shopping-item input[type="checkbox"]:checked + .itemName {
+            opacity: 0.5;
+        }
+       
+     
+   
+  

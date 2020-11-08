@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    background-color: $color-background;
+    font-family: $main-font;
+    overflow-x:hidden;
+
+  
+  }
+
+  ::selection {
+    background-color: $color-selection;
+  }
+
+  h2 {
+      margin: .5em;
+      padding: 1.5em;
+      @include respond(phone){
+        margin: .4em;
+        padding: .6em;
+        font-size: 1em;
+    }
+  }
+  

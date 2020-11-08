@@ -1,81 +1,108 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-    min-height: 100vh;
-    display: grid;
-    align-items: start;
-    justify-items: center;
-    background-color: lightblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  /* Shopping Form */
-  .shopping {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    
-  }
-  
+  min-height: 100vh;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  background-color: lightblue;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
+
+::selection {
+  background-color: lightyellow; }
+
+h2 {
+  margin: .5em;
+  padding: 1.5em; }
+  @media only screen and (max-width: 37.5em) {
+    h2 {
+      margin: .4em;
+      padding: .6em;
+      font-size: 1em; } }
+
+.shopping-item button {
+  font-style: inherit;
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s; }
+  .shopping-item buttonshopping-item button:hover {
+    transform: scale(1.4); }
+
+button {
+  font-style: inherit;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 4px 16px;
+  border: 4px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: .5rem; }
+  @media only screen and (max-width: 37.5em) {
+    button {
+      padding: 10px 10px;
+      margin: 4px 14px; } }
+  buttonbutton:hover {
+    opacity: 0.6; }
+
+input {
+  font-size: 1rem;
+  font-style: italic; }
+  @media only screen and (max-width: 37.5em) {
+    input {
+      font-size: 1.2rem;
+      size: auto; } }
+
+/* Shopping Form */
+.shopping {
+  display: grid;
+  grid-template-columns: 1fr auto; }
+  @media only screen and (max-width: 37.5em) {
+    .shopping {
+      grid-template-columns: 38%; } }
   .shopping-list {
     background: white;
     padding: 3rem;
     border-radius: 1rem;
     width: 500px;
     margin: 4rem 0;
-    font-size: 1rem;
-  }
-  
-  .shopping-list ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .shopping-item {
-    padding: 1rem 0;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 1rem;
-    align-items: center;
-    border-bottom: 1px solid var(--gray);
-    font-size: 1rem;
-  }
-  
-  .shopping-item input[type="checkbox"] {
-    margin-right: 1rem;
- 
-  }
-  
-  .shopping-item input[type="checkbox"]:checked + .itemName {
-    opacity: 0.5;
-  }
-  
-  .shopping-item button {
-    font-style: inherit;  
-    padding: 6px 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .shopping-item button:hover {
-    transform: scale(1.4);
-  }
-  
-  button {
-    font-style: inherit;  
-    cursor: pointer;
-    padding: 12px 20px;
-    margin: 4px 2px;
-    border: none;
-    font-size: 0.9em;
-    font-weight: bold;
-    border-radius: .5rem;
-  }
+    font-size: 1rem; }
+    .shopping-list-list ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
 
-  button:hover {
-    opacity: 0.6;
-}
+.shopping-item {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  font-size: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .shopping-item {
+      grid-template-columns: .1fr .4fr .1fr;
+      grid-gap: .5em;
+      padding: .2em 0;
+      font-size: .8em; } }
 
-input {
-    font-size: 1rem;
-    font-style: italic;
-}
+.shopping-item input[type="checkbox"] {
+  margin-right: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .shopping-item input[type="checkbox"] {
+      margin-right: .5rem;
+      justify-content: center; } }
+
+.shopping-item input[type="checkbox"]:checked + .itemName {
+  opacity: 0.5; }

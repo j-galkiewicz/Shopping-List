@@ -1,0 +1,24 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "List of items you need",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass main.scss style.css -w",
+    "devserver": "live-server --browser=safari"
+  },
+  "repository": {
+    "type": "git",
+    "url": "j-galkiewicz"
+  },
+  "keywords": [
+    "javascript",
+    "shoppinglist"
+  ],
+  "author": "JG",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
