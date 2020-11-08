@@ -50,7 +50,8 @@ button {
   border: 4px;
   font-size: 0.9em;
   font-weight: bold;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+  background-color: lightblue; }
   @media only screen and (max-width: 37.5em) {
     button {
       padding: 5px 8px;

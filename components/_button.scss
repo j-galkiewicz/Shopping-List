@@ -21,6 +21,7 @@
     font-size: 0.9em;
     font-weight: bold;
     border-radius: .5rem;
+    background-color: $color-background;
     @include respond(phone){
         padding: 5px 8px;
         margin: 4px 40px; 
