@@ -1,5 +1,8 @@
 const shoppingForm = document.querySelector('.shopping');
 const list = document.querySelector('.list');
+const secondHand = document.querySelector('.second-hand');
+const minHand = document.querySelector('.minute-hand');
+const hourHand = document.querySelector('.hour-hand');
 
 //an array to hold all the items
 let items = [];
@@ -91,11 +94,6 @@ restoreFromLocalStorage();
 
 //Clock
 
-
-    const secondHand = document.querySelector('.second-hand');
-    const minHand = document.querySelector('.minute-hand');
-    const hourHand = document.querySelector('.hour-hand');
-
     function setDate() {
       const now = new Date();
       //seconds hand
@@ -112,3 +110,4 @@ restoreFromLocalStorage();
       hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
       
     }
+    setInterval(setDate, 1000);
