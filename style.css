@@ -77,10 +77,10 @@ input {
       grid-template-columns: auto; } }
   .shopping-list {
     background: white;
-    padding: 3rem;
+    padding: 8%;
     border-radius: 1rem;
     width: 450px;
-    margin: 14em 0;
+    margin: 30px auto;
     font-size: 1rem; }
     .shopping-list-list ul {
       list-style: none;
@@ -118,9 +118,9 @@ input {
   height: 7rem;
   border: 10px solid white;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 20px 1px;
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .clock {
